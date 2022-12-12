@@ -4,21 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Description of this page"> 
+    <meta name="description" content="Welcome to the community science museum"> 
     <title>Community Science Museum | Home </title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="CSS/stylesheet.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo3.png" alt="Community Science Museum logo"></a>
+        </div>   
+        <nav>
+            <a class="active" href="index.html">Home</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+            <a href="explore.html">explore</a>
+            <a href="exhibitions.html">exhibitions</a>
+            <a href="location.html">location</a>
+            <a href="news.html">news and events</a>   
+        </nav>  
+            <div>
+              <input type="checkbox" id="toggle-checkbox">
+                <label for="toggle-checkbox" class="toggle-label">Menu</label>
+                <div class="menu">
+                <div>
+                <a class="active" href="index.html">Home</a>
+                </div>
+                <div>
+                <a href="about.html">About</a>
+                </div>
+                <div>
+                <a href="contact.html">Contact</a>
+                </div>
+                <div>
+                <a href="explore.html">Explore</a>
+                </div>
+                <div>
+                <a href="exhibitions.html">exhibitions</a>
+                </div>
+                <div>
+                <a href="location.html">location</a>
+                </div>
+                <div>
+                <a href="news.html">news and events</a>
+                </div>
+                </div>           
+            </div>
+    </header>
     <main>
-        <h1>Explore together</h1>
-    </main>
- 
-    
-    
-    
-    
-    <footer>
+        <section class="hero content">
+            <img src="images/cover.jpg" alt="A teenager painting while wearing VR glasses">
+            <div>
+            <h1>Explore together</h1>
+            <p>Come join us at the Community Science Museum where we`re committed to making science accessible to all.
+            </p></div>
+            <a class="button explore content" href="explore.html">Explore</a>
+        </section>
 
+        <div class="main content">
+            <div class="news one">
+                <h2>News and events</h2>
+                <h3>night in the Museum</h3>
+                <img src="images/night.jpg" alt="museum at night">
+                <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays.</p>
+                <a class="button read" href="news.html">read more</a>
+            </div>
+                <div class="news two">
+                    <h3>Energetica Exhibition on Loan</h3>
+                    <img src="images/electrica.jpg" alt="energetica exhibition">
+                    <p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum.</p>
+                    <a class="button read" href="news.html">read more</a>
+                </div>
+            
+            <div class="exhibitions">        
+                <h2>Exhibitions</h2>
+                <img src="images/red-vr.jpg" alt="child wearing vr glasses">
+                <p>Are you ready to explore the cosmos? Or perhaps you want to shake the hand of Rob the Robot?  Discover our exhibitons here</p>
+            </div>
+                <a class="button exhibitions" href="exhibitions.html">see exhibitions</a> 
+            <div class="location">
+                <h2>Location</h2>
+                <img src="images/museum-inside.jpg" alt="inside the museum">
+                <p>Come visit us in Bergen, the entrance is free for all ! </p>
+                <a href="location.html" class="button visit">Take me there</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul id="hours">
+            <h2>Opening hours:</h2>
+            <li>Monday: Closed</li>
+            <li>Tuesday-Thursday: 10:00 - 16:00</li>
+            <li>Friday: 10:00 - 19:00</li>
+            <li>Saturday: 9:00 - 16:00</li>
+            <li>Sunday: 9:00 - 13:00</li>
+            </ul>
+            <div id="entry">
+            <h2>free entry</h2>
+            <p>
+                Bontelabo 2, 5003 BERGEN</p>
+                <p>+47 55 36 48 88</p>
+            </div>
+            <div id="accessibility">
+            <h2>Accessibility</h2>
+            <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>
+            </div>
+        <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a class="active" href="about.html">about</a>
+                <a href="contact.html">contact</a>   
     </footer>
 </body>
 </html>

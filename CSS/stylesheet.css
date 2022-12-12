@@ -1,0 +1,255 @@
+:root {
+    --blue: #C8E7F1;
+    --orange: #DA9D56;
+    --red: #EE8787;
+    --light-yellow: #FAE59C;
+    --green: #A7D99A;
+    --light-green: #CED98E;
+    --purple: #C6B7EF;
+    --yellow: #DEC261;
+    --black: #000;
+    --drop-shadow: drop-shadow(3px 3px 3px rgb(109, 104, 104));
+    --title-padding: padding: 20px 50px; margin: 20px 0px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+body {
+    background-color: #f9f9f7;
+    font-family: 'Nunito', sans-serif, 'Lucida Sans', 'Lucida Sans Regular', Verdana;
+    margin: 0px;
+}
+
+h1, h2, h3, h4 a {
+    text-transform: capitalize;
+    margin-top: 50px;
+}
+
+p {
+    margin-bottom: 40px;
+}
+a {
+    text-decoration: none;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+nav a {
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.logo {
+    margin: auto;
+}
+
+img {
+    max-width: 100%;
+    max-height: 1000px;
+    min-height: 200px;
+}
+.logo img {
+    max-width: 300px;
+    max-height: 300px;
+}
+ul {
+    list-style:none;
+    padding-left:0;
+}
+footer {
+    background-color: var(--yellow);
+    padding: 30px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+}
+footer h1 {
+    font-size: 1.2em;
+}
+footer a {
+    padding: 20px;
+    margin: auto;
+    font-weight: bold;   
+}
+
+main {
+    margin-bottom: 100px;
+}
+
+.content {
+    margin: 20px;
+    max-width: 1000px;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.button:hover, a:hover {
+    font-size: 1.3em;
+    transition: 0.3s;
+}
+
+.button {
+    text-align: center;
+    padding: var(--button-padding);
+    filter: var(--drop-shadow);
+    padding: 10px 50px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.button.explore, .robotics, .energetica {
+    background-color: var(--orange);
+    padding: 10px 20px;
+}
+.button.contact, .cosmology, .professor {
+    background-color: var(--red);
+    padding: 10px 20px;
+}
+.button.visit {
+    background-color: var(--light-green);
+    padding: 10px 20px;
+}
+.button.read, .biology, .night {
+    background-color: var(--purple);
+    padding: 10px 20px;
+}
+.button.exhibitions, .ecology {
+    background-color: var(--green);
+    padding: 10px 20px;
+}
+.button.research, .news h2, .evolution {
+    background-color: var(--blue);
+    padding: 10px 20px;
+}
+text {
+    line-height: 1,5rem;
+    text-align: left;
+}
+.map {
+    margin-bottom: 50px;
+}
+
+/* HOME PAGE / INDEX PAGE */
+
+.hero {
+    margin-top: 30px;
+    height: 500px;
+    max-width: 1000px;
+    margin: 20px;
+}
+
+.exhibitions h2 {
+    background-color: var(--orange);
+    padding: 10px;
+}
+.location h2 {
+    background-color: var(--red);
+    padding: 10px;
+    margin-top: 100px;
+}
+.news.one, .exhibitons, .location {
+    margin-bottom: 50px;
+}
+
+/* ABOUT PAGE */ 
+
+.food, .admission {
+    margin-top: 50px;
+}
+
+/* This code is inspired from: https://codepen.io/fuzzylogicx/pen/LYNxZKb */
+.menu {
+    display: none;
+    background-color: var(--light-yellow);
+  }
+
+  #toggle-checkbox:checked ~ .menu {
+    display: block;
+    padding: 30px 30px 20px 20px;
+    margin-top: 3px;
+    line-height: 2.5em;
+    font-size: 1.2em;
+    position: absolute;
+    margin-left: 20px;
+    
+  }
+
+  #toggle-checkbox {
+  display: none;
+
+  }
+  .toggle-label {
+    background-color: var(--blue);
+    padding: 5px 20px;
+    display: inline-block;
+    font-size: 1.2em;
+    margin-left: 20px;
+    filter: var(--drop-shadow);
+    max-width: 50px;
+  }
+
+  @media (min-width: 901px) {
+    
+    .toggle-label {
+      display: none;
+    }
+    .content, nav, .footer-links {
+        margin: auto;
+    }
+    .night {
+        width: 50%;
+    }
+    .energetica {
+        width: 50%;
+    }
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+        padding: 50px 100px;
+        align-items: baseline;
+    }
+    #hours {
+        width: 30%
+    } 
+    #entry {
+        width: 30%;
+    }
+    #accessibility {
+        width: 30%;
+    }
+    .main.content img, p {
+        max-height: 600px;
+        max-width: 50%;
+    }
+    .main.content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 400px;
+    }
+
+  }
+
+  @media (max-width: 900px) {
+    nav {
+        display: none;
+    }
+    .button {
+        position: relative;
+    }
+    .news.two {
+        display: none;
+    }
+  }
