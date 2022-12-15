@@ -11,64 +11,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="CSS/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<header>
+    <header>          
+        <div class="nav-container">
+            <nav> 
+                <div class="nav-item">
+                    <input type="checkbox" id="check"> 
+                    <label for="check" class="check-button"><i class="fa fa-bars"></i></label>
+                    <ul id="menu">            
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li><a href="explore.html">explore</a></li>
+                        <li><a href="exhibitions.html">exhibitions</a></li>
+                        <li><a href="location.html">location</a></li>
+                        <li><a href="news.html">news and events</a>  </li>
+                    </ul>
+                </div>
+                
+            </nav>
+
+        </div>
+    </header>            
         <div class="logo">
-            <a href="index.html"><img src="images/logo3.png" alt="Community Science Museum logo"></a>
-        </div>   
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">about</a>
-            <a href="contact.html">contact</a>
-            <a href="explore.html">explore</a>
-            <a href="exhibitions.html">exhibitions</a>
-            <a href="location.html">location</a>
-            <a class="active" href="news.html">news and events</a>   
-        </nav>  
-            <div>
-              <input type="checkbox" id="toggle-checkbox">
-                <label for="toggle-checkbox" class="toggle-label">Menu</label>
-                <div class="menu">
-                <div>
-                <a href="index.html">Home</a>
-                </div>
-                <div>
-                <a href="about.html">About</a>
-                </div>
-                <div>
-                <a href="contact.html">Contact</a>
-                </div>
-                <div>
-                <a href="explore.html">Explore</a>
-                </div>
-                <div>
-                <a href="exhibitions.html">exhibitions</a>
-                </div>
-                <div>
-                <a href="location.html">location</a>
-                </div>
-                <div>
-                <a class="active" href="news.html">news and events</a>
-                </div>
-                </div>           
-            </div>
-</header>
-<main class="content">
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+        </div>
+<main class="content news">
     <h1>news and events</h1>
     <div><h2 class="night">night in the museum</h2>
     <img src="images/museum-inside1.jpg" alt="inside the museum">
 <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.
-</p></div>
-<a class="button contact" href="contact.html">contact us</a>
+</p><a class="button contact" href="contact.html">contact us</a></div>
+
     <div><h2 class="energetica">Energetica Exhibition on Loan</h2>
     <img src="images/electrica.jpg" alt="electrica installations">
-<p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum. It’s a series of installations that allow visitors to experience the power of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’ that shows how turbines are able to use and control wind to create power.</p></div>
-<a class="button exhibitions" href="exhibitions.html">see all exhibitions</a>
+<p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum. It’s a series of installations that allow visitors to experience the power of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’ that shows how turbines are able to use and control wind to create power.</p><a class="button exhibitions" href="exhibitions.html">see all exhibitions</a></div>
+
     <div><h2 class="professor">Visiting Professor of Aeronautics</h2>
     <img src="images/teacher.jpg" alt="professor speaking in auditorium">
-<p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p></div>
-<a class="button visit" href="location.html">visit us now</a>
+<p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p><a class="button visit" href="location.html">visit us now</a></div>
+
 </main>
 <footer>
         

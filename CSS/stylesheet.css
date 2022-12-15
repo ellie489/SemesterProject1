@@ -1,255 +1,244 @@
 :root {
     --blue: #C8E7F1;
+    --white: #f9f9f7;
     --orange: #DA9D56;
     --red: #EE8787;
     --light-yellow: #FAE59C;
     --green: #A7D99A;
     --light-green: #CED98E;
     --purple: #C6B7EF;
-    --yellow: #DEC261;
+    --yellow: #efd863;
     --black: #000;
+    --gray: rgb(210, 210, 210);
     --drop-shadow: drop-shadow(3px 3px 3px rgb(109, 104, 104));
-    --title-padding: padding: 20px 50px; margin: 20px 0px;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-}
-body {
-    background-color: #f9f9f7;
+body{
+    background-color: var(--white);
     font-family: 'Nunito', sans-serif, 'Lucida Sans', 'Lucida Sans Regular', Verdana;
-    margin: 0px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-h1, h2, h3, h4 a {
+h1, h2, h3, h4, h5 {
+    padding: 10px;
+}
+
+ul, a, h1, h2, h3, h4, h5, h6 {
     text-transform: capitalize;
-    margin-top: 50px;
-}
-
-p {
-    margin-bottom: 40px;
-}
-a {
     text-decoration: none;
-    color: var(--black);
-    text-transform: capitalize;
+    list-style: none;    
+    padding-left: 0;
 }
-
-nav {
-    display: flex;
-    flex-wrap: wrap;
-}
-nav a {
-    padding: 20px;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.logo {
-    margin: auto;
-}
-
-img {
-    max-width: 100%;
-    max-height: 1000px;
-    min-height: 200px;
-}
-.logo img {
-    max-width: 300px;
-    max-height: 300px;
-}
-ul {
-    list-style:none;
-    padding-left:0;
-}
-footer {
-    background-color: var(--yellow);
-    padding: 30px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    font-size: 1em;
-}
-footer h1 {
-    font-size: 1.2em;
-}
-footer a {
-    padding: 20px;
-    margin: auto;
-    font-weight: bold;   
-}
-
-main {
-    margin-bottom: 100px;
-}
-
-.content {
-    margin: 20px;
-    max-width: 1000px;
-}
-
-.active {
-    text-decoration: underline;
-}
-
-.button:hover, a:hover {
-    font-size: 1.3em;
-    transition: 0.3s;
-}
-
-.button {
-    text-align: center;
-    padding: var(--button-padding);
-    filter: var(--drop-shadow);
-    padding: 10px 50px;
-    font-weight: bold;
-    position: absolute;
-}
-
-.button.explore, .robotics, .energetica {
-    background-color: var(--orange);
-    padding: 10px 20px;
-}
-.button.contact, .cosmology, .professor {
-    background-color: var(--red);
-    padding: 10px 20px;
-}
-.button.visit {
-    background-color: var(--light-green);
-    padding: 10px 20px;
-}
-.button.read, .biology, .night {
-    background-color: var(--purple);
-    padding: 10px 20px;
-}
-.button.exhibitions, .ecology {
-    background-color: var(--green);
-    padding: 10px 20px;
-}
-.button.research, .news h2, .evolution {
-    background-color: var(--blue);
-    padding: 10px 20px;
-}
-text {
+p {
     line-height: 1,5rem;
     text-align: left;
 }
+a {
+    color: var(--black);
+}
+
+/* menu icon from: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-bars */
+
+
+nav {
+    background-color: var(--white);
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 40px;  
+    height: 40px;
+    line-height: 40px;  
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#check, .check-button {
+    display: none;
+    font-size: 2.5em;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+}
+.logo img, img {
+    max-height: 500px;
+    max-width: 1000px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    max-height: 400px;
+}
+/* FOOTER */ 
+footer {
+    background-color: var(--light-yellow);
+    font-size: 1em;
+    padding: 20px; 
+    margin-top: 100px;
+}
+footer a {
+    padding: 30px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+a.active, a:hover, button:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -100px;
+}
+.content {
+    max-width: 1000px;
+}
+
+
+.button {
+    text-align: center;
+    filter: var(--drop-shadow);
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.button.explore, .robotics, .energetica, #exhibitions-h2 {
+    background-color: var(--orange);
+}
+.button.contact, .cosmology, .professor, .support, .location h2 {
+    background-color: var(--red);
+}
+.button.visit, .internships {
+    background-color: var(--light-green);
+}
+.button.read, .biology, .night {
+    background-color: var(--purple);
+}
+.button.exhibitions, .ecology {
+    background-color: var(--green);
+}
+.button.research, .evolution, .events h2 {
+    background-color: var(--blue);
+}
+.button.explore.hero {
+    padding: 10px 80px;
+    background-color: var(--yellow);
+    text-transform: uppercase;
+}
+.volunteer {
+    background-color: var(--light-yellow);
+}
+
 .map {
     margin-bottom: 50px;
 }
 
-/* HOME PAGE / INDEX PAGE */
-
-.hero {
-    margin-top: 30px;
-    height: 500px;
-    max-width: 1000px;
-    margin: 20px;
-}
-
-.exhibitions h2 {
-    background-color: var(--orange);
+/* CONTACT PAGE */
+input,textarea {
+    width: 300px;
+    background-color: var(--white);
+    border: 0;
     padding: 10px;
-}
-.location h2 {
-    background-color: var(--red);
+    margin-bottom: 20px;
+  }
+  .contact-form {
+    display:flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 20px;
+    background-color: var(--purple);
+  }
+  .contact-text {
     padding: 10px;
-    margin-top: 100px;
-}
-.news.one, .exhibitons, .location {
-    margin-bottom: 50px;
-}
-
-/* ABOUT PAGE */ 
-
-.food, .admission {
-    margin-top: 50px;
-}
-
-/* This code is inspired from: https://codepen.io/fuzzylogicx/pen/LYNxZKb */
-.menu {
-    display: none;
-    background-color: var(--light-yellow);
+    line-height: 15px;
+    font-size: 0.9em;
+  }
+  .contact-text h1{
+    text-align: left;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  #toggle-checkbox:checked ~ .menu {
-    display: block;
-    padding: 30px 30px 20px 20px;
-    margin-top: 3px;
-    line-height: 2.5em;
-    font-size: 1.2em;
-    position: absolute;
-    margin-left: 20px;
+
+@media (min-width: 901px){
     
-  }
+header, footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+}
+footer {
+    font-size: 1.2em;
+}
+#hours, #entry, #accessibility {
+    flex-basis: 30%;
+}
 
-  #toggle-checkbox {
-  display: none;
-
-  }
-  .toggle-label {
-    background-color: var(--blue);
-    padding: 5px 20px;
+    nav ul li {
     display: inline-block;
-    font-size: 1.2em;
-    margin-left: 20px;
-    filter: var(--drop-shadow);
-    max-width: 50px;
-  }
+    padding: 20px;
+    }
+}
 
-  @media (min-width: 901px) {
-    
-    .toggle-label {
-      display: none;
-    }
-    .content, nav, .footer-links {
-        margin: auto;
-    }
-    .night {
-        width: 50%;
-    }
-    .energetica {
-        width: 50%;
-    }
-    footer {
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-width: 100%;
-        padding: 50px 100px;
-        align-items: baseline;
-    }
-    #hours {
-        width: 30%
-    } 
-    #entry {
-        width: 30%;
-    }
-    #accessibility {
-        width: 30%;
-    }
-    .main.content img, p {
-        max-height: 600px;
-        max-width: 50%;
-    }
-    .main.content {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        flex-wrap: wrap;
-        margin-top: 400px;
-    }
+@media (max-width: 900px) {
 
-  }
-
-  @media (max-width: 900px) {
-    nav {
-        display: none;
-    }
-    .button {
-        position: relative;
-    }
     .news.two {
         display: none;
     }
-  }
+
+    #menu {
+        display: none;
+        width: 100%;
+        background-color: var(--white);
+        height: 100vh;
+    }
+    .check-button, nav ul li, #check:checked ~ ul{
+        display: block;
+        padding: 20px;
+        line-height: 30px;
+    }
+
+    .logo img, img {
+    max-width: 100%;
+    }
+/* 
+    .main.content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        width: 100%;
+    }
+    .main.content img {
+        width: 50%;
+    }
+    .main.content p {
+        width: 50%;
+    }
+*/
+    .main.content img {
+        max-width: 300px;
+    }
+    .exhibitions {
+        display: flex;
+        flex-wrap: wrap;
+        flex: auto;
+        margin-bottom: 50px;
+    }
+
+
+
+}    

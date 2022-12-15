@@ -11,53 +11,65 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="CSS/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<header>
+    <header>          
+        <div class="nav-container">
+            <nav> 
+                <div class="nav-item">
+                    <input type="checkbox" id="check"> 
+                    <label for="check" class="check-button"><i class="fa fa-bars"></i></label>
+                    <ul id="menu">            
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a class="active" href="contact.html">contact</a></li>
+                        <li><a href="explore.html">explore</a></li>
+                        <li><a href="exhibitions.html">exhibitions</a></li>
+                        <li><a href="location.html">location</a></li>
+                        <li><a href="news.html">news and events</a>  </li>
+                    </ul>
+                </div>
+                
+            </nav>
+
+        </div>
+    </header>            
         <div class="logo">
-            <a href="index.html"><img src="images/logo3.png" alt="Community Science Museum logo"></a>
-        </div>   
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">about</a>
-            <a class="active" href="contact.html">contact</a>
-            <a href="explore.html">explore</a>
-            <a href="exhibitions.html">exhibitions</a>
-            <a href="location.html">location</a>
-            <a href="news.html">news and events</a>   
-        </nav>  
-            <div>
-              <input type="checkbox" id="toggle-checkbox">
-                <label for="toggle-checkbox" class="toggle-label">Menu</label>
-                <div class="menu">
-                <div>
-                <a href="index.html">Home</a>
-                </div>
-                <div>
-                <a href="about.html">About</a>
-                </div>
-                <div>
-                <a class="active" href="contact.html">Contact</a>
-                </div>
-                <div>
-                <a href="explore.html">Explore</a>
-                </div>
-                <div>
-                <a href="exhibitions.html">exhibitions</a>
-                </div>
-                <div>
-                <a href="location.html">location</a>
-                </div>
-                <div>
-                <a href="news.html">news and events</a>
-                </div>
-                </div>           
-            </div>
-</header>
-<main class="content">
-
-
-
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+        </div>
+<main class="content contact">
+            <h1 id="contact-h1">Contact us</h1>
+        <form class="contact-form" action="submit.php" method="POST">
+            <label for="firstname">Name:</label><input type="text" name="name" id="firstname" />
+            <label for="email">Email:</label><input type="email" name="email" id="email">
+            <label for="phone">Phone Number:</label><input type="tel" name="phone" id="phone">
+            <label for="subject">Select your subject:</label>
+            <select name="subject" id="subject">
+            <option value="Guided tours">Guided Tours</option>
+            <option value="Young stars club">Young stars club</option>
+            <option value="Holiday club">Holiday club</option>
+            <option value="School Visits">School Visits</option>
+            <option value="Volunteering">Volunteering</option>
+            <option value="Internships">Internships</option>
+            <option value="Other">Other</option>
+            </select>
+            <label for="message">Message:</label><textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send"/>
+          </form>
+          <div class="get-involved">
+            <h2>Get involved</h2>
+            <h3 class="support">Support</h3>
+            <p>There are various ways you can support the museum. Donations are very welcome and are an important way we keep this museum open and accessible to the whole community.
+                You can also support us by donating items of interest to the museum’s collections. If you have some item or collection that you think others would enjoy, please let us know by contacting our Collections Department and they will be able to assist you.
+                </p>
+            <h3 class="volunteer">volunteer</h3>
+            <p>A number of people volunteer their time and effort to keep the displays in good order and ready for visitors to come and enjoy. Volunteering has its perks including getting to see behind the scenes of a working museum, access to staff-only lectures, and a monthly lunch where all staff and volunteers come together to discuss ideas for future exhibits and strategies for the museum.
+                You can help volunteer in a number of different spheres. Please contact us if you’d like to find out more about how you can get involved.
+                </p>
+            <h3 class="internships">Internships</h3>
+            <p>Are you interested in working in a museum? Do you enjoy the fun and excitement of sharing the wonders of nature with people? Well you could be just the right person to enjoy an internship at the museum. You’ll be learning from a number of different academics and people who are passionate about science and sharing it with the wider community.</p>
+          </div>
 </main>
 <footer>
         

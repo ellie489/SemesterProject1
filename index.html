@@ -11,62 +11,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="CSS/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
+    <header>          
+        <div class="nav-container">
+            <nav> 
+                <div class="nav-item">
+                    <input type="checkbox" id="check"> 
+                    <label for="check" class="check-button"><i class="fa fa-bars"></i></label>
+                    <ul id="menu">            
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li><a href="explore.html">explore</a></li>
+                        <li><a href="exhibitions.html">exhibitions</a></li>
+                        <li><a href="location.html">location</a></li>
+                        <li><a href="news.html">news and events</a>  </li>
+                    </ul>
+                </div>
+                
+            </nav>
+
+        </div>
+    </header>            
         <div class="logo">
-            <a href="index.html"><img src="images/logo3.png" alt="Community Science Museum logo"></a>
-        </div>   
-        <nav>
-            <a class="active" href="index.html">Home</a>
-            <a href="about.html">about</a>
-            <a href="contact.html">contact</a>
-            <a href="explore.html">explore</a>
-            <a href="exhibitions.html">exhibitions</a>
-            <a href="location.html">location</a>
-            <a href="news.html">news and events</a>   
-        </nav>  
-            <div>
-              <input type="checkbox" id="toggle-checkbox">
-                <label for="toggle-checkbox" class="toggle-label">Menu</label>
-                <div class="menu">
-                <div>
-                <a class="active" href="index.html">Home</a>
-                </div>
-                <div>
-                <a href="about.html">About</a>
-                </div>
-                <div>
-                <a href="contact.html">Contact</a>
-                </div>
-                <div>
-                <a href="explore.html">Explore</a>
-                </div>
-                <div>
-                <a href="exhibitions.html">exhibitions</a>
-                </div>
-                <div>
-                <a href="location.html">location</a>
-                </div>
-                <div>
-                <a href="news.html">news and events</a>
-                </div>
-                </div>           
-            </div>
-    </header>
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+        </div>
     <main>
         <section class="hero content">
             <img src="images/cover.jpg" alt="A teenager painting while wearing VR glasses">
-            <div>
+            <div class="hero text">
             <h1>Explore together</h1>
             <p>Come join us at the Community Science Museum where we`re committed to making science accessible to all.
-            </p></div>
-            <a class="button explore content" href="explore.html">Explore</a>
+            </p>
+            <div>
+                <a class="button explore hero" href="explore.html">Explore</a>
+            </div> 
+        </div> 
         </section>
-
         <div class="main content">
-            <div class="news one">
-                <h2>News and events</h2>
+            <div class="events">
+                <h2 class="news one">News and events</h2>
                 <h3>night in the Museum</h3>
                 <img src="images/night.jpg" alt="museum at night">
                 <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays.</p>
@@ -78,13 +64,21 @@
                     <p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum.</p>
                     <a class="button read" href="news.html">read more</a>
                 </div>
-            
+
+            <h2 id="exhibitions-h2">Exhibitions</h2>
             <div class="exhibitions">        
-                <h2>Exhibitions</h2>
-                <img src="images/red-vr.jpg" alt="child wearing vr glasses">
-                <p>Are you ready to explore the cosmos? Or perhaps you want to shake the hand of Rob the Robot?  Discover our exhibitons here</p>
+                <div>
+                    <img src="images/red-vr.jpg" alt="child wearing vr glasses">
+                </div>
+                <div class="text">
+                    <p>Are you ready to explore the cosmos? Or perhaps you want to shake the hand of Rob the Robot?  Discover our exhibitons here</p>
+                </div>
+                <div>
+                    <a class="button exhibitions" href="exhibitions.html">see exhibitions</a>
+                </div>
             </div>
-                <a class="button exhibitions" href="exhibitions.html">see exhibitions</a> 
+            
+                 
             <div class="location">
                 <h2>Location</h2>
                 <img src="images/museum-inside.jpg" alt="inside the museum">
