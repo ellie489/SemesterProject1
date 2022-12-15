@@ -29,11 +29,11 @@ ul, a, h1, h2, h3, h4, h5, h6 {
     text-transform: capitalize;
     text-decoration: none;
     list-style: none;    
-    padding-left: 0;
 }
 p {
     line-height: 1,5rem;
     text-align: left;
+    max-width: 800px;
 }
 a {
     color: var(--black);
@@ -73,6 +73,9 @@ header {
     max-height: 500px;
     max-width: 1000px;
 }
+img {
+    max-height: 1000px;
+}
 .logo {
     display: flex;
     justify-content: center;
@@ -82,11 +85,11 @@ header {
 footer {
     background-color: var(--light-yellow);
     font-size: 1em;
-    padding: 20px; 
+    padding-bottom: 30px;
     margin-top: 100px;
 }
 footer a {
-    padding: 30px;
+    padding: 20px;
     font-weight: bold;
     font-size: 1.1em;
 }
@@ -95,21 +98,23 @@ a.active, a:hover, button:hover {
     text-decoration: underline;
 }
 
-main {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: -100px;
-}
 .content {
     max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
 }
-
+.container {
+    margin-bottom: 50px;
+}
 
 .button {
     text-align: center;
     filter: var(--drop-shadow);
     padding: 10px 20px;
     font-weight: bold;
+    max-width: 150px;
 }
 .button.explore, .robotics, .energetica, #exhibitions-h2 {
     background-color: var(--orange);
@@ -130,13 +135,21 @@ main {
     background-color: var(--blue);
 }
 .button.explore.hero {
-    padding: 10px 80px;
     background-color: var(--yellow);
+    margin-bottom: 50px;
+}
+
+.explore.hero a {
     text-transform: uppercase;
+}
+
+.hero.text p {
+    max-width: 500px;
 }
 .volunteer {
     background-color: var(--light-yellow);
 }
+/* LOCATION PAGE */
 
 .map {
     margin-bottom: 50px;
@@ -144,7 +157,6 @@ main {
 
 /* CONTACT PAGE */
 input,textarea {
-    width: 300px;
     background-color: var(--white);
     border: 0;
     padding: 10px;
@@ -153,27 +165,48 @@ input,textarea {
   .contact-form {
     display:flex;
     flex-direction: column;
-    max-width: 100%;
+    width: 350px;
     padding: 20px;
     background-color: var(--purple);
   }
-  .contact-text {
-    padding: 10px;
-    line-height: 15px;
-    font-size: 0.9em;
-  }
-  .contact-text h1{
-    text-align: left;
-  }
-  .contact {
+.content.contact {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 100px;
+    margin: auto;
+}
+.contact-area {
+    width: 50%;
+}
+.get-involved {
+    width: 50%;
+}
+.cont {
+    display: flex;
     flex-wrap: wrap;
-  }
-
+    width: 100%;
+}
+.cont {
+    align-items: center;
+}
+.events h2 {
+    width: 100vh;
+}
+.cont img, .night text, .cont h3 {
+    width: 1fr;
+    max-height: 600px;
+}
 
 @media (min-width: 901px){
-    
+
+.button.explore.hero {
+    float: right;
+    margin-right: 100px;
+    margin-top: -100px;
+    width: 300px;
+    font-size: 1.6em;
+}
 header, footer {
     display: flex;
     flex-wrap: wrap;
@@ -194,8 +227,35 @@ footer {
     }
 }
 
-@media (max-width: 900px) {
+p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
 
+@media (max-width: 900px) {
+     
+    .button.explore.hero {
+    padding: 10px 80px;
+    background-color: var(--white);
+    font-size: 1.5em;
+}
+.hero.text {
+    background-color: var(--yellow);
+    padding: 20px;
+}  
+
+ .content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    footer ul, footer h2, footer a {
+        list-style: none;
+        padding-left: 0;
+    }
+    footer {
+        padding: 50px;
+    }
+    
     .news.two {
         display: none;
     }
@@ -215,22 +275,11 @@ footer {
     .logo img, img {
     max-width: 100%;
     }
-/* 
-    .main.content {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 50px;
-        width: 100%;
-    }
-    .main.content img {
-        width: 50%;
-    }
-    .main.content p {
-        width: 50%;
-    }
-*/
     .main.content img {
         max-width: 300px;
+    }
+    main {
+        margin-top: -100px;
     }
     .exhibitions {
         display: flex;
@@ -239,6 +288,22 @@ footer {
         margin-bottom: 50px;
     }
 
-
+    .get-involved {
+        max-width: 90%;
+        width: 100%;
+        margin: 20px;
+    }
+    .content.contact {
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100vh;
+        line-height: 1.5em;
+        margin: auto;
+    }
+    .contact-area {
+        justify-content: center;
+        width: 300px;
+        margin: 20px
+    }
 
 }    
