@@ -41,7 +41,6 @@ a {
 
 /* menu icon from: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-bars */
 
-
 nav {
     background-color: var(--white);
     width: 100%;
@@ -59,7 +58,7 @@ nav ul {
     font-weight: bold;
 }
 
-#check, .check-button {
+#check, .check-button, .hidden {
     display: none;
     font-size: 2.5em;
 }
