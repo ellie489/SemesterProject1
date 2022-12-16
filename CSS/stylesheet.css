@@ -57,9 +57,6 @@ nav ul {
     font-size: 1.2em;
     font-weight: bold;
 }
-.hidden {
-    display: none;
-}
 #check, .check-button {
     display: none;
     font-size: 2.5em;
