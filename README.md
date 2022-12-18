@@ -6,8 +6,10 @@ This is my first semester project at Noroff Front End Development.
 
 https://aesthetic-moonbeam-dec4af.netlify.app
 
-## Figma Design Mobile:
+## Figma Prototype Mobile:
 
-## Figma Design Desktop:
+https://www.figma.com/proto/RJgiNTzSi7ypR8IOWujQpH/Science-Museum?page-id=1%3A284&node-id=1%3A1270&viewport=1299%2C838%2C1&scaling=scale-down&starting-point-node-id=1%3A1108
 
-https://www.figma.com/file/RJgiNTzSi7ypR8IOWujQpH/Science-Museum?node-id=1%3A286&t=R2j7QWTwDlzN9OAa-1
+## Figma Prototype Desktop:
+
+https://www.figma.com/proto/RJgiNTzSi7ypR8IOWujQpH/Science-Museum?page-id=1%3A286&node-id=21%3A636&viewport=1756%2C991%2C0.5&scaling=min-zoom&starting-point-node-id=21%3A636
