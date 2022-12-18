@@ -266,12 +266,13 @@ input,textarea {
   .text4 { grid-area: text4; }
 
 @media (min-width: 901px){
-  .container img {
-    height: 350px;
-    width: 600px;
-    max-height: 100%;
-    max-width: 100%;
-  }
+
+    .container img {
+        height: 350px;
+        width: 600px;
+        max-height: 100%;
+        max-width: 100%;
+    }
 
 .hero.wrapper {
     display: grid;
