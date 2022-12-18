@@ -265,7 +265,7 @@ input,textarea {
   .img4 { grid-area: img4; }
   .text4 { grid-area: text4; }
 
-@media (min-width: 901px){
+@media (min-width: 769px){
 
     .container img {
         height: 350px;
@@ -348,7 +348,7 @@ p {
 }
 
 }
-@media (max-width: 900px) {
+@media (max-width: 768px) {
      
 .container, .section1, .section2, .section3, .section4{
     display: flex;
