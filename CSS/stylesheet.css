@@ -19,10 +19,7 @@ body{
     list-style: none;
     padding: 0;
     margin: 0;
-}
 
-h1, h2, h3, h4, h5 {
-    padding: 10px;
 }
 
 ul, a, h1, h2, h3, h4, h5, h6 {
@@ -38,6 +35,7 @@ p {
 a {
     color: var(--black);
 }
+
 
 /* menu icon from: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-bars */
 
@@ -57,6 +55,7 @@ nav ul {
     font-size: 1.2em;
     font-weight: bold;
 }
+
 #check, .check-button {
     display: none;
     font-size: 2.5em;
@@ -79,6 +78,14 @@ img {
     justify-content: center;
     max-height: 400px;
 }
+
+.content {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
 /* FOOTER */ 
 footer {
     background-color: var(--light-yellow);
@@ -92,19 +99,10 @@ footer a {
     font-size: 1.1em;
 }
 
+/* BUTTONS */ 
+
 a.active, a:hover, button:hover {
     text-decoration: underline;
-}
-
-.content {
-    max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-}
-.container {
-    margin-bottom: 50px;
 }
 
 .button {
@@ -114,43 +112,57 @@ a.active, a:hover, button:hover {
     font-weight: bold;
     max-width: 150px;
 }
-.button.explore, .robotics, .energetica, #exhibitions-h2 {
+.button.explore, .ecology, .energetica, .exhibitions {
     background-color: var(--orange);
+    padding: 10px 20px;
 }
-.button.contact, .cosmology, .professor, .support, .location h2 {
+.button.contact, .cosmology, .professor, .support, .location {
     background-color: var(--red);
+    padding: 10px 20px;
 }
 .button.visit, .internships {
     background-color: var(--light-green);
+    padding: 10px 20px;
 }
 .button.read, .biology, .night {
     background-color: var(--purple);
+    padding: 10px 20px;
 }
-.button.exhibitions, .ecology {
+.button.exhibitions, .robotics {
     background-color: var(--green);
+    padding: 10px 20px;
 }
-.button.research, .evolution, .events h2 {
+.button.research, .evolution, .news {
     background-color: var(--blue);
+    padding: 10px 20px;
 }
 .button.explore.hero {
     background-color: var(--yellow);
     margin-bottom: 50px;
 }
-
 .explore.hero a {
     text-transform: uppercase;
 }
-
 .hero.text p {
     max-width: 500px;
 }
 .volunteer {
     background-color: var(--light-yellow);
+    padding: 10px 20px;
+}
+
+/* ABOUT PAGE */ 
+
+.about, .explore-kids {
+    background-color: var(--light-yellow);
+    padding: 20px;
 }
 /* LOCATION PAGE */
 
 .map {
     margin-bottom: 50px;
+    display: flex;
+    flex-shrink: 1;
 }
 
 /* CONTACT PAGE */
@@ -159,6 +171,7 @@ input,textarea {
     border: 0;
     padding: 10px;
     margin-bottom: 20px;
+    filter: var(--drop-shadow);
   }
   .contact-form {
     display:flex;
@@ -180,24 +193,81 @@ input,textarea {
 .get-involved {
     width: 60%;
 }
-.cont {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-.cont {
-    align-items: center;
-}
-.events h2 {
-    width: 100vh;
-}
-.cont img, .night text, .cont h3 {
-    width: 1fr;
-    max-height: 600px;
-}
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 4fr 1fr 4fr; 
+    gap: 10px;
+    max-width: 1000px;
+    margin: auto;
+    grid-template-areas: 
+      "news news news news"
+      "section1 section1 section2 section2"
+      "exhibitions exhibitions location location"
+      "section3 section3 section4 section4"; 
+  }
+  .news { grid-area: news; }
+
+  .section1 {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 20px; 
+    grid-template-areas: 
+      "img1 text1"; 
+    grid-area: section1; 
+  }
+
+  .img1 { grid-area: img1; }
+  .text1 { grid-area: text1; }
+
+  .section2 {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 20px; 
+    grid-template-areas: 
+      "img2 text2"; 
+    grid-area: section2; 
+  }
+  .img2 { grid-area: img2; }
+  .text2 { grid-area: text2; }
+
+  .exhibitions { grid-area: exhibitions; }
+  .location { grid-area: location; }
+  
+  .section3 {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 20px; 
+    grid-template-areas: 
+      "img3 text3"; 
+    grid-area: section3; 
+  }
+  .img3 { grid-area: img3; }
+  .text3 { grid-area: text3; }
+
+  .section4 {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 20px; 
+    grid-template-areas: 
+      "img4 text4"; 
+    grid-area: section4; 
+  }
+  .img4 { grid-area: img4; }
+  .text4 { grid-area: text4; }
 
 @media (min-width: 901px){
-
+  .container img {
+    height: 350px;
+    width: 600px;
+    max-height: 100%;
+    max-width: 100%;
+  }
 .button.explore.hero {
     float: right;
     margin-right: 100px;
@@ -211,19 +281,34 @@ header, footer {
     justify-content: center;
     align-items: baseline;
     width: 100%;
-}
-footer {
-    font-size: 1.2em;
-}
-#hours, #entry, #accessibility {
-    flex-basis: 30%;
+    font-size: 1em;
 }
 
-    nav ul li {
+#hours, #entry, #accessibility {
+    flex-basis: 30%;
+    max-width: 500px;
+}
+.about, .explore-kids, .cosmology, .evolution, .biology, .robotics, .ecology {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.about p, .explore-kids p  {
+    margin: 30px;
+}
+.explore.button {
+    margin: auto;
+    padding: 15px 100px;
+    font-size: 1.3em;
+}
+
+}
+nav ul li {
     display: inline-block;
     padding: 20px;
-    }
 }
+
 
 p {
     font-size: 1.2em;
@@ -232,6 +317,17 @@ p {
 
 @media (max-width: 900px) {
      
+.container, .section1, .section2, .section3, .section4{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+}    
+
+.section2 {
+    display: none;
+}
     .button.explore.hero {
     padding: 10px 80px;
     background-color: var(--white);
