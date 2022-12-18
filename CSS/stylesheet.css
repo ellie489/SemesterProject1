@@ -285,8 +285,9 @@ header, footer {
 }
 
 #hours, #entry, #accessibility {
-    flex-basis: 30%;
+    width: 30%;
     max-width: 500px;
+    padding-left: 50px;
 }
 .about, .explore-kids, .cosmology, .evolution, .biology, .robotics, .ecology {
     display: flex;
@@ -303,7 +304,7 @@ header, footer {
     font-size: 1.3em;
 }
 
-}
+
 nav ul li {
     display: inline-block;
     padding: 20px;
@@ -315,6 +316,7 @@ p {
     line-height: 1.5em;
 }
 
+}
 @media (max-width: 900px) {
      
 .container, .section1, .section2, .section3, .section4{
