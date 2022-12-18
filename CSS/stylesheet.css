@@ -25,7 +25,7 @@ body{
 ul, a, h1, h2, h3, h4, h5, h6 {
     text-transform: capitalize;
     text-decoration: none;
-    list-style: none;    
+    list-style: none; 
 }
 p {
     line-height: 1,5rem;
@@ -66,11 +66,12 @@ header {
     top: 0;
     width: 100%; 
 }
-.logo img, img {
+.logo img {
     max-height: 500px;
     max-width: 1000px;
 }
 img {
+    max-width: 1000px;
     max-height: 1000px;
 }
 .logo {
@@ -151,6 +152,7 @@ a.active, a:hover, button:hover {
     padding: 10px 20px;
 }
 
+
 /* ABOUT PAGE */ 
 
 .about, .explore-kids {
@@ -193,6 +195,8 @@ input,textarea {
 .get-involved {
     width: 60%;
 }
+
+/* INDEX / HOME PAGE */
 
 .container {
     display: grid; 
@@ -268,14 +272,25 @@ input,textarea {
     max-height: 100%;
     max-width: 100%;
   }
+
+.hero.wrapper {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto;
+    margin: 0px 20px;
+}
 .button.explore.hero {
-    float: right;
-    margin-right: 100px;
-    margin-top: -100px;
     width: 300px;
     font-size: 1.6em;
 }
-header, footer {
+
+.explore.button {
+    margin: auto;
+    padding: 15px 100px;
+    font-size: 1.3em;
+}
+
+header, #footer-content, footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -285,31 +300,46 @@ header, footer {
 }
 
 #hours, #entry, #accessibility {
-    width: 30%;
-    max-width: 500px;
-    padding-left: 50px;
+    width: 20%;
 }
-.about, .explore-kids, .cosmology, .evolution, .biology, .robotics, .ecology {
+
+.about, .explore-kids, .cosmology, .evolution, .biology, .robotics, .ecology .wrapper  {
     display: flex;
     flex-direction: column;
     padding: 30px;
     margin-bottom: 50px;
 }
-.about p, .explore-kids p  {
+.about p, .explore-kids p {
     margin: 30px;
 }
-.explore.button {
-    margin: auto;
-    padding: 15px 100px;
-    font-size: 1.3em;
+.wrapper, .wrapper p, .ecology {
+    padding-bottom: 50px;
 }
-
+.cosmology, .biology, .ecology, .evolution, .robotics, .ecology{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40% auto;
+    gap: 30px;
+}
+.cosmology-img, .evolution-img, .biology-img, .robotics-img, .ecology-img {
+    max-width: 100%;
+    max-height: 100%;
+}
 
 nav ul li {
     display: inline-block;
     padding: 20px;
 }
-
+.info.wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    gap: 30px;
+    margin-top: 50px;
+}
+.food, .shop {
+    width: 1fr;
+}
 
 p {
     font-size: 1.2em;
@@ -330,15 +360,18 @@ p {
 .section2 {
     display: none;
 }
-    .button.explore.hero {
+.button.explore.hero {
     padding: 10px 80px;
     background-color: var(--white);
     font-size: 1.5em;
 }
-.hero.text {
+.hero.wrapper {
     background-color: var(--yellow);
-    padding: 20px;
+    padding: 30px;
 }  
+.hero.text {
+    margin: 30px;
+}
 
  .content {
         margin-left: 20px;
@@ -401,5 +434,4 @@ p {
         width: 300px;
         margin: 20px
     }
-
 }    

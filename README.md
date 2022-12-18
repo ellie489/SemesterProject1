@@ -1,24 +1,13 @@
 # SemesterProject1
-This is my first semester project at Noroff Front End Development. 
 
-.cta-button {
-    padding: 10px;
-    border-radius: 0;
-    background-color: #DEC261;
-}
-.hero {
-    
-    background-image: url(../Images/cover.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-    max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-}
+This is my first semester project at Noroff Front End Development.
 
-.hero-text {
-    background-color: #DEC261;
-    display: flex;
-    flex: 1 2 3;
-}
+## Netlify Link
+
+https://aesthetic-moonbeam-dec4af.netlify.app
+
+## Figma Design Mobile:
+
+## Figma Design Desktop:
+
+https://www.figma.com/file/RJgiNTzSi7ypR8IOWujQpH/Science-Museum?node-id=1%3A286&t=R2j7QWTwDlzN9OAa-1
