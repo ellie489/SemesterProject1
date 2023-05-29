@@ -1,6 +1,6 @@
-# SemesterProject1
+# Semester Project 1
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](https://github.com/ellie489/SemesterProject1/blob/main/Images/semester-project.png))
 
 This is my first Semester Project at Noroff Front End Development. 
 
